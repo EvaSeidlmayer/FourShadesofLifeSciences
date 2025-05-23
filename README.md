@@ -1,13 +1,11 @@
 # FourShadesofLifeSciences
 
 
-Project documentation on Automatic Quality Assessment NLP approach for the semantic mapping of texts in the life science
-=======
-# Automatic Quality Assessment: NLP approach for the semantic mapping of texts in the life science
+Material related research articles "Four Shades of Life Sciences: A dataset for disinformation detection in the Life Sciences"
 
 ---
 
-## Project description
+## Abstract 
 Beyond the political sphere, the proliferation of disinformation within the fields of medical and life sciences presents a significant challenge to public health. Disinformation is characterized by the incorrectness of information, as well as by the intention to spread the false information. Research attempts to address the issue of incorrectness by automating fact-checking, which comes with several difficulties when applied to research texts. 
 The work presented in the article focuses on the intention rather than the fact-checking. Since disinformation follows goals such as making money, gaining attention, or discrediting a competitor, the language style is shaped by these goals. 
 State-of-the-art machine learning techniques offer potential solutions to address or mitigate this issue, including methods such as text classification. The development of robust text classification methodologies requires high-quality data sets for training and evaluation. Currently, there are few comprehensive datasets for full-text life sciences with respect to disinformation. In general, the data sets focus on fact-checking short statements which refer to misinformation. To our knowledge, the approach to include the intention has not yet been addressed  by research.   
@@ -20,7 +18,7 @@ AQUAS at [ZB MED](https://www.zbmed.de/forschen/laufende-projekte/aquas/)
 ## Webservice
 Here you find a web serive: https://fsols.zbmed.de/
 
-## Publications 
+## Publication Reference
 Soon you find our first publication here: < xx >
 
 
@@ -38,18 +36,12 @@ Soon you can find the data set here: < Zenodo >.
 ## Code
  see this repoitory: 
 
-## Press release
-[Deutsches Ärzteblatt: Künstliche Intelligenz soll Fake News bei medizinischen Informationen erkennen, 2022-12-27](https://www.aerzteblatt.de/nachrichten/139246/Kuenstliche-Intelligenz-soll-Fake-News-bei-medizinischen-Informationen-erkennen)<br/>
-[B.I.T.-online: ZB MED sagt Falschinformationen den Kampf an, 2023-01-06](https://www.b-i-t-online.de/neues/7715)<br/>
-[Fachbuchjournal: ZB MED sagt Falschinformationen den Kampf an, 2023](https://www.fachbuchjournal.de/zb-med-sagt-falschinformationen-den-kampf-an/)<br/>
-[German Circle (privater Blog), 2023-01-14](https://germancircle.blogspot.com/2023/01/aquas-gegen-falschinformationen.html)<br/>
-
 
 ## Responsible
 Eva Seidlmayer, Dr. phil., M.LIS <br/>
 Data Sciences and Services, Research Fellow <br/>
 ORCID: 0000-0001-7258-0532 <br/>
-Mastodon: @eta_kivilih | Bluesky: @etakivilih.bsky.social <br/>
+Mastodon: @eta_kivilih@eldritch.cafe | Bluesky: @etakivilih.bsky.social <br/>
 <br/>
 ZB MED – Informations Centre for Life Sciences <br/>
 Gleueler Straße 60 <br/>
@@ -63,8 +55,7 @@ INFORMATION. KNOWLEDGE. LIFE.
 
 
 ## Funding
-DFG-LIS  <br/>
-FO 984/6-1
+DFG-LIS: FO 984/6-1
 
 ## License
 >>>>>>> 16abf1e4419ea0c154748f0336cf3138056dc945
