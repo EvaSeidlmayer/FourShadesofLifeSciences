@@ -3,9 +3,9 @@
 __description__ = "evaluate non Mistral 7b models, #add your huggingface token manually"
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>"
 __copyright__ = "2025 by Eva Seidlmayer"
-__license__ = "ISC license"
+__license__ = "MIT license"
 __email__ = "seidlmayer@zbmed.de"
-__version__ = "1 "
+__version__ = "1.0.1 "
 
 
 import argparse

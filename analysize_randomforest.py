@@ -3,10 +3,10 @@
 
 __description__ = "analyze decision tree rules from  random forrest"
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>"
-__copyright__ = "2024 by Eva Seidlmayer"
-__license__ = "ISC license"
+__copyright__ = "2024-2025 by Eva Seidlmayer"
+__license__ = "MIT license"
 __email__ = "seidlmayer@zbmed.de"
-__version__ = "1 "
+__version__ = "1.0.1 "
 
 
 import glob

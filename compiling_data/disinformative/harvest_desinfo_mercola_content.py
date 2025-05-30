@@ -4,10 +4,10 @@
 __description__ = "get data from desinfo webpage Mercolas Censored library and adding to data directory: https://www.mercola.com/ e.g.: https://takecontrol.substack.com/p/what-happens-during-menopause"
 
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>"
-__copyright__ = "2023 by Eva Seidlmayer"
-__license__ = "ISC license"
+__copyright__ = "2023-2025 by Eva Seidlmayer"
+__license__ = "MIT license"
 __email__ = "seidlmayer@zbmed.de"
-__version__ = "1 "
+__version__ = "1.0.1 "
 
 import pandas as pd
 import requests

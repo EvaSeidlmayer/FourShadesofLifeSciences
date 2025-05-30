@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 __description__ = "compilation of data set for FSoLS dataset"
+"the amount of items per class and data source needs to be stated manually"
 (
     "composing ratio refers to 14 topics and several data sources. Please add the numbers for each topic and database. "
     "PMC = PubMed Central"
@@ -18,8 +19,8 @@ __description__ = "compilation of data set for FSoLS dataset"
     "health DOT news"
     "infowars"
     "MCL = Mercolas Censored Library "
-    "homeoJ = homeopathic journal"
-    "IJRH = Indian JOurnal for research homeopathy"
+    "homeoJ = Homeopathic Journal"
+    "IJRH = Indian Journal for Research Homeopathy"
 )
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>"
 __copyright__ = "2024-2025 by Eva Seidlmayer"

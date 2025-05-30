@@ -4,9 +4,9 @@
 __description__ = "train datatset with BERT using sliding windows approach; change amount of epochs, tokens and model manually."
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>, Lukas Galke"
 __copyright__ = "2023-2025 by Eva Seidlmayer"
-__license__ = "ISC license"
+__license__ = "MIT license"
 __email__ = "seidlmayer@zbmed.de"
-__version__ = "1 "
+__version__ = "1.0.1 "
 
 
 BERT_MODEL_IDENTIFIER = "dmis-lab/biobert-v1.1"

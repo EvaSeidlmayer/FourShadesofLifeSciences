@@ -4,9 +4,9 @@
 __description__ = "compile harvested PMC files how to:  1) get all PMIDS related to a MESH term: harvest_PMC_topicwise-IDS.py, 2) havest citations from Open citations and calculate the ten percent most cited: harvest_Opencitations_for-citation.py 3) get text for ten percent most cited: harvest_PMC_PMID-to-txt.py, 4) 4. compile files to one and delete empty texts: compile_PMC-data.py"
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>"
 __copyright__ = "2024-2ß25 by Eva Seidlmayer"
-__license__ = "ISC license"
+__license__ = "MIT license"
 __email__ = "seidlmayer@zbmed.de"
-__version__ = "1 "
+__version__ = "1.0.1 "
 
 import glob
 import pandas as pd

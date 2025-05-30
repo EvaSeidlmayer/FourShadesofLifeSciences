@@ -10,10 +10,10 @@ __description__ = (
     "4) compile files to one and delete empty texts: compile_PMC-data.py"
 )
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>"
-__copyright__ = "2024 by Eva Seidlmayer"
-__license__ = "ISC license"
+__copyright__ = "2024-2025 by Eva Seidlmayer"
+__license__ = "MIT license"
 __email__ = "seidlmayer@zbmed.de"
-__version__ = "1 "
+__version__ = "1.0.1 "
 
 import pandas as pd
 import argparse

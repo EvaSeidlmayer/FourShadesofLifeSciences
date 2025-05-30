@@ -4,9 +4,9 @@
 __description__ = "train FSoLS datatset with Mistral 7B change amount of epochs, tokens and model manually."
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>"
 __copyright__ = "2024-2025 by Eva Seidlmayer"
-__license__ = "ISC license"
+__license__ = "MIT license"
 __email__ = "seidlmayer@zbmed.de"
-__version__ = "1 "
+__version__ = "1.0.1 "
 
 
 MODEL_IDENTIFIER = "mistralai/Mistral-7B-v0.3"

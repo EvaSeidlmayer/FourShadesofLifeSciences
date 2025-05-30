@@ -5,10 +5,10 @@ __description__ = (
     "harvest data from  https://healthimpactnews.com and add it to data directory"
 )
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>"
-__copyright__ = "2023 by Eva Seidlmayer"
-__license__ = "ISC license"
+__copyright__ = "2023-2025 by Eva Seidlmayer"
+__license__ = "MIT license"
 __email__ = "seidlmayer@zbmed.de"
-__version__ = "1 "
+__version__ = "1.0.1 "
 
 import re
 import pandas as pd
