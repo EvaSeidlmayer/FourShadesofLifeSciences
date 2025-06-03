@@ -4,9 +4,9 @@
 __description__ = (
     "harvest Open Citation for passive citations (cited-by). Infos on the API: https://opencitations.net/index/api/v1 "
     "how to: "
-    "1) get all PMIDS related to a MESH term: harvest_PMC_topicwise-IDS.py"
-    "2) havest citations from Open citations and calculate the ten percent most cited: harvest_Opencitations_for-citation.py"
-    "3) get text for ten percent most cited: harvest_PMC_PMID-to-txt.py"
+    "1) get all PMIDS related to a MESH term: harvest_PMC_citation-freq_topicwise.py"
+    "2) havest citations from Open citations and calculate the ten percent most cited: harvest_PMC_citation-freq_Opencitations_for-citation.py"
+    "3) get text for ten percent most cited: harvest_PMC_citation-freq_PMID-to-txt.py"
 )
 
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>"

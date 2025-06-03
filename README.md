@@ -16,14 +16,53 @@ The data set was compiled in 2024. It contains a total of 2633 items.
 AQUAS at [ZB MED](https://www.zbmed.de/forschen/laufende-projekte/aquas/)
 
 ## Webservice
-Here you find a web serive: https://fsols.zbmed.de/
+Here you find a web service: https://fsols.zbmed.de/
 
 ## Publication Reference
 Soon you find our first publication here: < xx >
 
 
 ## Dataset
-Soon you can find the data set here: < Zenodo >.
+You will soon be able to find the parts of the data set under open license here: < Zenodo >.
+Scientific Text Data: PubMed Central
+Alternative Scientific Text Data :
+- BMC Complementary Medicine and Therapies: "(...) we will apply a Creative Commons licence allowing re-use of the article by third parties for particular purposes."
+- International Journal of Homoeopathic Journal: CC BY-NC License
+- Indian Journal of Research in Homeopathy: CC BY NC DD 4.0 License 
+- The Journal of Evidence-Based Integrative Medicine (JEBIM): "Manuscript content on this site is licensed under Creative Commons Licenses"
+
+- -> only Anthroposophic Goetheaneum List has different licenes
+
+| category    | data source                 | amount         |
+|-------------|-----------------------------|----------------|
+|             | PMC                         | 687            |
+| scientific  |                             | total: 687     |
+| --------    | -------                     | -----          |
+|             | CompMedTherapies            | 309            |
+|             | Indian-research-Homeopathy  | 10             |
+|             | homeopathicjournal          | 138            |
+|             | PAAM/Goetheaneum-list       | 17             |
+|             | JEBIM                       | 193            |
+| alternative |                             | total: 657     |
+| ------------| --------------------------- | ------         |
+|             | HarvardMedicalSchool        | 116            |
+|             | mayoclinic                  | 17             |
+|             | MedlinePlus                 | 121            |
+|             | MensHealth                  | 115            |
+|             | WebMD                       | 238            |
+|             | WomensHealth                | 108            |
+| vernacular  |                             | total: 716/715 |
+|-------------| --------------------------- | -------        |
+|             | Mercola                     | 137            |
+|             | HealthDOTNews               | 20             |
+|             | HealthImpactNews            | 175            |
+|             | InfoWars                    | 12             |
+|             | NaturalNews                 | 294            |
+| disinfo     |                             | total: 534     |
+
+
+
+
 
 ### Compiling Data
 #### Alternative Scientific Text Data
@@ -44,7 +83,8 @@ Soon you can find the data set here: < Zenodo >.
 - The Journal of Evidence-Based Integrative Medicine (JEBIM) is a peer-reviewed open access journal which focuses on hypothesis-driven and evidence-based research in all fields of integrative medicine. Previously the Journal of Evidence-Based Complementary and Alternative Medicine (JEBCAM), https://journals.sagepub.com/home/CHP , ISSN: 2515-690X
   - URLs: urls_sagejournalsofevidencebasedintegrativemedicine.csv
   - HARVESTING: harvest_sagejournalsofevidencebasedintegrativemedicine.py
-#### Disinforamtive Text Data
+  - 
+#### Disinformative Text Data
 - Mercolas Censored library: https://www.mercola.com/
   - **Internet archive set-up missed so far** 
     - URLs: urls_Mercola.csv
@@ -62,39 +102,53 @@ Soon you can find the data set here: < Zenodo >.
   - URLs: urls_NaturalNews.csv 
   - HARVESTING: harvest_NaturaNews.py
 
-#### Scietific Text Data
+#### Scientific Text Data
 - PubMed Central:
-  - URLs:  
-  - HARVESTING:
+  - Dementia [C10.228.140.380, F03.615.400] 
+  - Myocardial Infarction [C14.280.647.500, C14.907.585.500, C23.550.513.355.750, C23.550.717.489.750]
+  - Sleep Initiation and Maintenance Disorders [C10.886.425.800.800, F03.870.400.800.800]
+  - Menopause [G08.686.157.500, G08.686.841.249.500]
+  - Stroke [C10.228.140.300.775, C14.907.253.855]
+  - Tobacco Use [F01.145.958] / Tobacco Smoking [F01.145.805.375,  F01.145.958.875]
+  - Curcuma [B01.875.800.575.912.250.618.937.900.166]
+  - Measles [C01.925.782.580.600.500.500]
+  - Inflammation [C23.550.470]
+  - Vaccines [D20.215.894]
+  - Abortion, Induced [E04.520.050]
+  - Climate change  [G16.500.175.374]
+  - Pandemics [N06.850.290.200.600]
+  - Urine [A12.207.927]
+
+    - HARVESTING: 
+      1) get all PMIDS related to a MESH term: harvest_PMC_by_MESH.py 
+      2) compile files to one and delete empty texts: harvest_PMC_PMID-to-txt.py
+    - HARVESTING 10% most cited papers: 
+      1) get all PMIDS related to a MESH term: harvest_PMC_citation-freq_topicwise.py"
+      2) harvest citations from Open citations and calculate the ten percent most cited: harvest_PMC_citation-freq_Opencitations_for-citation.py
+      3) get text for ten percent most cited: harvest_PMC_citation-freq_PMID-to-txt.py
+      4) compile files to one and delete empty texts: compile_PMC_citation-freq_data.py
 
 #### Vernacular Text Data
-- Harvard Health Publishing: 
+- Harvard Health Publishing: https://www.health.harvard.edu/ webpage with patient information
+  - URLs:  urls_HarvardHealthPublishing.csv
+  - HARVESTING: harvest_HarvardHealthPublishing.py
+- Mayo Clinic: https://www.mayoclinic.org/drugs-supplements webpage with information on drugs and supplements
   - URLs:  
-  - HARVESTING:
-- Mayo Clinic:
-  - URLs:  
-  - HARVESTING:
-- Medline Plus:
-  - URLs:  
-  - HARVESTING:
-- MensHealth:
-  - URLs:  
-  - HARVESTING:
-- WebMD:
-  - URLs:  
-  - HARVESTING:
-- WomensHealth: 
-  - URLs:  
-  - HARVESTING:
+  - HARVESTING: 
+- Medline Plus Magazine: https://magazine.medlineplus.gov
+  - URLs:  urls_MedlinePlus.csv
+  - HARVESTING: harvest_MedlinePlus-content.py
+- MensHealth: https://www.menshealth.com webpage with lifestyle information
+  - URLs:  urls_MensHealth.csv
+  - HARVESTING: harvest_MensHealth.py
+- WebMD:  https://www.webmd.com webpage with patient information
+  - URLs:  urls_WebMD.csv
+  - HARVESTING: harvest_WebMD_website.py
+- WomensHealth: https://www.womenshealthmag.com webpage with lifestyle information
+  - URLs:  urls_WomensHealth.csv
+  - HARVESTING: harvest_WomensHealth.py
 
-
-OA:
-Alternative:
-- BMC Complementary Medicine and Therapies: "(...) we will apply a Creative Commons licence allowing re-use of the article by third parties for particular purposes."
-- International Journal of Homoeopathic Journal: CC BY-NC License
-- Indian Journal of Research in Homeopathy: CC BY NC DD 4.0 License 
-- The Journal of Evidence-Based Integrative Medicine (JEBIM): "Manuscript content on this site is licensed under Creative Commons Licenses"
--> only Anthroposophic Goetheaneum List different licenes
+  
 
 ![Image balanced data set](./images/balanceddata.png)
 ![limit of one class limits the other classes](./images/balanceddata_2.png)

@@ -2,7 +2,13 @@
 # -*- coding: utf-8 -*-
 
 __description__ = (
-    "harvest text by PMID via Entrez-API from MEDLINE data directory")
+    "harvest text by PMID via Entrez-API from MEDLINE data directory"
+    "how to: "
+    "1) get all PMIDS related to a MESH term: harvest_PMC_citation-freq_topicwise.py"
+    "2) havest citations from Open citations and calculate the ten percent most cited: harvest_PMC_citation-freq_Opencitations_for-citation.py"
+    "3) get text for ten percent most cited: harvest_PMC_citation-freq_PMID-to-txt.py"
+    "4) compile files to one and delete empty texts: compile_PMC_citation-freq_data.py"
+)
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>"
 __copyright__ = "2024-2025 by Eva Seidlmayer"
 __license__ = "MIT license"
