@@ -33,34 +33,34 @@ Alternative Scientific Text Data :
 
 - -> only Anthroposophic Goetheaneum List has different licenes
 
-| category    | data source                 | amount         |
-|-------------|-----------------------------|----------------|
-|             | PMC                         | 687            |
-| scientific  |                             | total: 687     |
-| --------    | -------                     | -----          |
-|             | CompMedTherapies            | 309            |
-|             | Indian-research-Homeopathy  | 10             |
-|             | homeopathicjournal          | 138            |
-|             | PAAM/Goetheaneum-list       | 17             |
-|             | JEBIM                       | 193            |
-| alternative |                             | total: 657     |
-| ------------| --------------------------- | ------         |
-|             | HarvardMedicalSchool        | 116            |
-|             | mayoclinic                  | 17             |
-|             | MedlinePlus                 | 121            |
-|             | MensHealth                  | 115            |
-|             | WebMD                       | 238            |
-|             | WomensHealth                | 108            |
-| vernacular  |                             | total: 716/715 |
-|-------------| --------------------------- | -------        |
-|             | Mercola                     | 137            |
-|             | HealthDOTNews               | 20             |
-|             | HealthImpactNews            | 175            |
-|             | InfoWars                    | 12             |
-|             | NaturalNews                 | 294            |
-| disinfo     |                             | total: 534     |
-
-
+| category          | data source                 | amount      |
+|-------------------|-----------------------------|-------------|
+|                   | PMC                         | 687         |
+| scientific        |                             | total: 687  |
+| --------          | -------                     | -----       |
+|                   | CompMedTherapies            | 309         |
+|                   | Indian-research-Homeopathy  | 10          |
+|                   | homeopathicjournal          | 138         |
+|                   | PAAM/Goetheaneum-list       | 17          |
+|                   | JEBIM                       | 193         |
+| alternative       |                             | total: 667  |
+| ------------      | --------------------------- | ------      |
+|                   | HarvardMedicalSchool        | 116         |
+|                   | mayoclinic                  | 17          |
+|                   | MedlinePlus                 | 121         |
+|                   | MensHealth                  | 115         |
+|                   | WebMD                       | 238         |
+|                   | WomensHealth                | 108         |
+| vernacular        |                             | total: 715  |
+| -------------     | --------------------------- | ---------   |
+|                   | Mercola                     | 137         |
+|                   | HealthDOTNews               | 20          |
+|                   | HealthImpactNews            | 175         |
+|                   | InfoWars                    | 12          |
+|                   | NaturalNews                 | 190         |
+| disinfo           |                             | total: 534  |
+| ----              | ---                         | ----------  |
+| complete data set |                             | total: 2603 |
 
 
 
