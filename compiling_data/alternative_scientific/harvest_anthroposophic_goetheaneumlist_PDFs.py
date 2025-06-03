@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__description__ = "retrieve text from URLs "
+__description__ = "retrieve text from URLs file urls_anthroposophic_goetheaneum.csv. URLs mentioned in Physicians' Association for Anthroposophic Medicine (PAAM, https://anthroposophicmedicine.org/) as well as in: literature lists 2017-2020 Anthroposophic Medicine School of Spiritual Science Medical Section at the Goetheanum (https://medsektion-goetheanum.org/en/research/publications/journal-contributions-on-research-in-anthroposophic-medicine-2017-2019)"
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>"
 __copyright__ = "2025 by Eva Seidlmayer"
 __license__ = "MIT license"
@@ -78,7 +78,7 @@ def main():
     args = argparser.parse_args()
 
     # read csv with URLS
-    urls_df = pd.read_csv(args.input).reset_index()
+    urls_df = pd.read_csv(args.input)
 
 
     # initiate index

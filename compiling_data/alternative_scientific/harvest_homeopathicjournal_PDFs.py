@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 
 __description__ = (
-    "get data from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/ oline archive which contains PDF of Open "
-    "access articles indexed in Pub Med Central"
+    "get data from https://www.homoeopathicjournal.com"
 )
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>"
 __copyright__ = "2023-25 by Eva Seidlmayer"
@@ -139,34 +138,34 @@ def main():
     # loop through each document-url
     df = pd.read_csv(args.input)
     for i, row in df.iterrows():
-        link = row[0]
-        print(link)
+        url = str(row[1])
+
         i += 1
         print("Processing file:", i)
-        if ".pdf" in link:
-            # download pdf in dummy
-            path = download_pdf(link, i)
 
-            # parse pdf to string
-            pdf_txt = pdf_to_text(path)
+        # download pdf in dummy
+        path = download_pdf(url, i)
 
-            if pdf_txt is None:
-                continue
+        # parse pdf to string
+        pdf_txt = pdf_to_text(path)
 
-            # preprocess string
-            cleaned_txt = clean_text(pdf_txt)
+        if pdf_txt is None:
+            continue
 
-            # seach for doi, PMC-id
-            text_id = identify_text_id(link)
+        # preprocess string
+        cleaned_txt = clean_text(pdf_txt)
 
-            # compile information  df
-            df_all = compile_infos(cleaned_txt, df_all, text_id, link, i)
+        # seach for doi, PMC-id
+        text_id = identify_text_id(url)
 
-            df_all.to_csv(args.output,
-                mode="w",
-                index=False,
-                header=True,
-            )
+        # compile information  df
+        df_all = compile_infos(cleaned_txt, df_all, text_id, link, i)
+
+        df_all.to_csv(args.output,
+            mode="w",
+            index=False,
+            header=True,
+        )
 
     print("done")
 

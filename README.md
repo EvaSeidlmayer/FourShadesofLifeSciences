@@ -25,6 +25,76 @@ Soon you find our first publication here: < xx >
 ## Dataset
 Soon you can find the data set here: < Zenodo >.
 
+### Compiling Data
+#### Alternative Scientific Text Data
+- Anthroposophic Goetheaneum List:  
+  - **topics needs to be assigned afterwards**
+  - URLs: urls_anthroposophic_goetheaneum.csv: URLs mentioned in Physicians' Association for Anthroposophic Medicine (PAAM, https://anthroposophicmedicine.org/)
+   as well as in: literature lists 2017-2020 Anthroposophic Medicine School of Spiritual Science Medical Section at the Goetheanum (https://medsektion-goetheanum.org/en/research/publications/journal-contributions-on-research-in-anthroposophic-medicine-2017-2019)
+  - HARVESTING: harvest_anthroposophic_goetheaneumlist_PDFs.py: For harvesting PDFs from URLS
+- BMC Complementary Medicine and Therapies: https://bmccomplementmedtherapies.biomedcentral.com/, ISSN: 2662-7671
+  - URLs: urls_complementarymedicineandtherapies.csv: URLS from BMC Complementary Medicine and Therapies
+  - HARVESTING: harvest_complementarymedandtherapies.py: Retrieve text from PDF-URLs BMC Complementary Medicine and Therapies
+- International Journal of Homoeopathic Sciences: https://www.homoeopathicjournal.com, ISSN: 2616-4485
+  - **topics needs to be assigned afterwards**
+  - URLs: urls_homeopathicjournal.csv
+  - HARVESTING: harvest_homeopathicjournal_PDFs.py
+- Indian Journal of Research in Homeopathy: https://www.ijrh.org/journal/, ISSN 0974-7168
+  - URLs and HARVESTING: URLs can directly harvested from website: harvest_Indian-research-Homeoathy_PDFs.py
+- The Journal of Evidence-Based Integrative Medicine (JEBIM) is a peer-reviewed open access journal which focuses on hypothesis-driven and evidence-based research in all fields of integrative medicine. Previously the Journal of Evidence-Based Complementary and Alternative Medicine (JEBCAM), https://journals.sagepub.com/home/CHP , ISSN: 2515-690X
+  - URLs: urls_sagejournalsofevidencebasedintegrativemedicine.csv
+  - HARVESTING: harvest_sagejournalsofevidencebasedintegrativemedicine.py
+#### Disinforamtive Text Data
+- Mercolas Censored library: https://www.mercola.com/
+  - **Internet archive set-up missed so far** 
+    - URLs: urls_Mercola.csv
+    - HARVESTING: harvest_Mercola.py
+- HealthNews
+  - URLs:  urls_HealthNews.csv
+  - HARVESTING: harvest_HealthNews.py
+- Health Impact News
+  - URLs:  urls_HealthImpactNews.csv
+  - HARVESTING: harvest_HealtImpactNews.py
+- Infowars: https://www.infowars.com/category/4/ only "health" category
+  - URLs:  urls_Infowars.csv
+  - HARVESTING: harvest_Infowars.py
+- Natural News: https://www.naturalnews.com/
+  - URLs: urls_NaturalNews.csv 
+  - HARVESTING: harvest_NaturaNews.py
+
+#### Scietific Text Data
+- PubMed Central:
+  - URLs:  
+  - HARVESTING:
+
+#### Vernacular Text Data
+- Harvard Health Publishing: 
+  - URLs:  
+  - HARVESTING:
+- Mayo Clinic:
+  - URLs:  
+  - HARVESTING:
+- Medline Plus:
+  - URLs:  
+  - HARVESTING:
+- MensHealth:
+  - URLs:  
+  - HARVESTING:
+- WebMD:
+  - URLs:  
+  - HARVESTING:
+- WomensHealth: 
+  - URLs:  
+  - HARVESTING:
+
+
+OA:
+Alternative:
+- BMC Complementary Medicine and Therapies: "(...) we will apply a Creative Commons licence allowing re-use of the article by third parties for particular purposes."
+- International Journal of Homoeopathic Journal: CC BY-NC License
+- Indian Journal of Research in Homeopathy: CC BY NC DD 4.0 License 
+- The Journal of Evidence-Based Integrative Medicine (JEBIM): "Manuscript content on this site is licensed under Creative Commons Licenses"
+-> only Anthroposophic Goetheaneum List different licenes
 
 ![Image balanced data set](./images/balanceddata.png)
 ![limit of one class limits the other classes](./images/balanceddata_2.png)

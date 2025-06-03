@@ -85,9 +85,13 @@ def compile_infos(pdf_txt, df, text_id, url, tag):
 
 def main():
     argparser = argparse.ArgumentParser()
-    argparser.add_argument("input_folder")
+    argparser.add_argument("input")
     argparser.add_argument("output")
     args = argparser.parse_args()
+
+    # read csv with URLS
+    urls_df = pd.read_csv(args.input)
+
 
     # initiate df with information columns
     df = pd.DataFrame(
@@ -99,20 +103,28 @@ def main():
             "data-source",
             "url",
             "text",
-        ]
-    )
+        ])
+    i = 0
+    # loop through each document-url
+    for index, row in urls_df.iterrows():
+        i += 1
+        print("Processing file:", i, "URL", row["url"], "with tag", row['topic'])
 
-    path = args.input_folder
-    pdfs = glob.glob(f"{path}/*")
-    for pdf in pdfs:
-        tag = ""
-        url = ""
-        text_id = pdf.split(path)[1]
-        pdf_text = pdf_to_text(pdf)
-        if pdf_text is None:
+        # download pdf in dummy
+        url = row["url"]
+        tag = row['topic']
+        text_id = url
+
+        path = download_pdf(url, i)
+
+        # parse pdf to string
+        pdf_txt = pdf_to_text(path)
+
+        if pdf_txt is None:
             continue
 
-        cleaned_txt = clean_text(pdf_text)
+
+        cleaned_txt = clean_text(pdf_txt)
 
         df = compile_infos(cleaned_txt, df, text_id, url, tag)
 

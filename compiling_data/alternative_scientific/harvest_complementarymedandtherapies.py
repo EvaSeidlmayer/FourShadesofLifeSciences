@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 __description__ = (
-    "retrieve text from PDF-URLs " "## BMC Complementary Medicine and Therapies"
+    "retrieve text from PDF-URLs BMC Complementary Medicine and Therapies"
 )
 __author__ = "Eva Seidlmayer <seidlmayer@zbmed.de>"
 __copyright__ = "2024-2025 by Eva Seidlmayer"
