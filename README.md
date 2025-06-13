@@ -33,34 +33,38 @@ Alternative Scientific Text Data :
 
 - -> only Anthroposophic Goetheaneum List has different licenes
 
-| category          | data source                 | amount      |
-|-------------------|-----------------------------|-------------|
-|                   | PMC                         | 687         |
-| scientific        |                             | total: 687  |
-| --------          | -------                     | -----       |
-|                   | CompMedTherapies            | 309         |
-|                   | Indian-research-Homeopathy  | 10          |
-|                   | homeopathicjournal          | 138         |
-|                   | PAAM/Goetheaneum-list       | 17          |
-|                   | JEBIM                       | 193         |
-| alternative       |                             | total: 667  |
-| ------------      | --------------------------- | ------      |
-|                   | HarvardMedicalSchool        | 116         |
-|                   | mayoclinic                  | 17          |
-|                   | MedlinePlus                 | 121         |
-|                   | MensHealth                  | 115         |
-|                   | WebMD                       | 238         |
-|                   | WomensHealth                | 108         |
-| vernacular        |                             | total: 715  |
-| -------------     | --------------------------- | ---------   |
-|                   | Mercola                     | 137         |
-|                   | HealthDOTNews               | 20          |
-|                   | HealthImpactNews            | 175         |
-|                   | InfoWars                    | 12          |
-|                   | NaturalNews                 | 190         |
-| disinfo           |                             | total: 534  |
-| ----              | ---                         | ----------  |
-| complete data set |                             | total: 2603 |
+| category            | data source                                         | amount         |
+|---------------------|-----------------------------------------------------|----------------|
+| scientific          |||
+|                     | Pubmed Central (PMC)                                | 687            |
+|           |                                                     | total: 687     |
+| ----- | -----  | -----  |
+| alternative         |||
+|                     | Complementary Medicine and Therapies                | 309            |
+|                     | Indian Journal of Research in Homeopathy            | 10             |
+|                     | International Journal of Homoeopathic Sciences      | 138            |
+|                     | Goetheaneum List                                    | 17             |
+|                     | The Journal of Evidence-Based Integrative Medicine  | 193            |
+|                     |                                                     | total: 667     |
+| -----               | -----   | -----  |
+| vernacular          |||
+|                     | Harvard Health Publishing                           | 116            |
+|                     | Mayo Clinic                                         | 17             |
+|                     | Medline Plus                                        | 121            |
+|                     | Men's Health                                        | 115            |
+|                     | WebMD                                               | 238            |
+|                     | Women's Health                                      | 108            |
+|           |                                                     | total: 715     |
+| -----               | -----  | ----- |
+| disinformative      | ||
+|                     | Dr. Mercola's Cenored Library                       | 137            |
+|                     | Health.News                                         | 20             |
+|                     | Health Impact News                                  | 175            |
+|                     | Info Wars                                           | 12             |
+|                     | Natural News                                        | 190            |
+|                     |                                                     | total: 534     |
+| -----               | ----- | ----- |
+| complete data set   |                                                     | total: 2603    |
 
 
 
@@ -85,11 +89,11 @@ Alternative Scientific Text Data :
   - HARVESTING: harvest_sagejournalsofevidencebasedintegrativemedicine.py
   - 
 #### Disinformative Text Data
-- Mercolas Censored library: https://www.mercola.com/
+- Dr. Mercola's Censored library: https://www.mercola.com/
   - **Internet archive set-up missed so far** 
     - URLs: urls_Mercola.csv
     - HARVESTING: harvest_Mercola.py
-- HealthNews
+- Health.News
   - URLs:  urls_HealthNews.csv
   - HARVESTING: harvest_HealthNews.py
 - Health Impact News
@@ -138,13 +142,13 @@ Alternative Scientific Text Data :
 - Medline Plus Magazine: https://magazine.medlineplus.gov
   - URLs:  urls_MedlinePlus.csv
   - HARVESTING: harvest_MedlinePlus-content.py
-- MensHealth: https://www.menshealth.com webpage with lifestyle information
+- Men's Health: https://www.menshealth.com webpage with lifestyle information
   - URLs:  urls_MensHealth.csv
   - HARVESTING: harvest_MensHealth.py
 - WebMD:  https://www.webmd.com webpage with patient information
   - URLs:  urls_WebMD.csv
   - HARVESTING: harvest_WebMD_website.py
-- WomensHealth: https://www.womenshealthmag.com webpage with lifestyle information
+- Women's Health: https://www.womenshealthmag.com webpage with lifestyle information
   - URLs:  urls_WomensHealth.csv
   - HARVESTING: harvest_WomensHealth.py
 
@@ -167,7 +171,7 @@ Data Sciences and Services, Research Fellow <br/>
 ORCID: 0000-0001-7258-0532 <br/>
 Mastodon: @eta_kivilih@eldritch.cafe | Bluesky: @etakivilih.bsky.social <br/>
 <br/>
-ZB MED – Informations Centre for Life Sciences <br/>
+ZB MED – Information Centre for Life Sciences <br/>
 Gleueler Straße 60 <br/>
 50931 Cologne <br/>
 Germany <br/>
